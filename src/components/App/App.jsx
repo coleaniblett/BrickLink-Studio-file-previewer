@@ -12,6 +12,8 @@ export default function App() {
   return (
     <div className="App">
       <Canvas>
+        <OrbitControls />
+        <Environment preset="city" />
         <Suspense>
          <Model />
         </Suspense>
