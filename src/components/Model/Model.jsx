@@ -8,8 +8,8 @@ export default function Model() {
   let camera = useThree.camera;
 
   let ldraw = useLoader(LDrawLoader, '/models/car.ldr', async (loader) => {
-    loader.setPath('https://raw.githubusercontent.com/gkjohnson/ldraw-parts-library/master/complete/ldraw/');
-    loader.setPartsLibraryPath( 'https://raw.githubusercontent.com/gkjohnson/ldraw-parts-library/master/complete/ldraw/' );
+    loader.setPath('https://raw.githubusercontent.com/coleaniblett/ldraw-parts-library/master/ldraw/');
+    loader.setPartsLibraryPath( 'https://raw.githubusercontent.com/coleaniblett/ldraw-parts-library/master/ldraw/' );
     await loader.preloadMaterials( '/LDConfig.ldr' );
   });
   
@@ -23,4 +23,3 @@ export default function Model() {
     </>
   )
 }
-
